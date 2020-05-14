@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Add to Quiz</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h3>Add to Quiz</h3>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <form action="insert.php" method="POST">
+                    <div>
+                        <input class="newQue" type="text" name="q" placeholder="Enter Your Question">
+                    </div>
+                    <div class="opt">
+                        <div>
+                            <ul class="all_options">
+                                <li><input class="option" type="text" name="o1" placeholder="Enter Option 1"></li>
+                                <li><input class="option" type="text" name="o2" placeholder="Enter Option 2"></li>
+                                <li><input class="option" type="text" name="o3" placeholder="Enter Option 3"></li>
+                                <li><input class="option" type="text" name="o4" placeholder="Enter Option 4"></li>
+                                <li><input class="option" type="text" name="a" placeholder="Enter Correct Answer"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div>
+                            <button class="btn-next" type="submit" value="insert">Add Question</button>
+                            <input href="start.html" onclick="location.href='start.html';" value="Home" class="btn-next"/>
+                        </div>
+                    </div>
+                </form>
+                <!-- <form action="start.html">
+                    <button type="submit" class="btn-next" style="float: right;">Home</button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
